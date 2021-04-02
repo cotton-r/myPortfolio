@@ -96,6 +96,7 @@ h2 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    z-index: 100;
 }
 
 nav ul li {
@@ -106,4 +107,53 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #fff;
+}
+
+/* About */
+
+#about {
+    width: 100%;
+    height: 1000px;
+    text-align: center;
+}
+
+.sectionTitle {
+    margin-top: 5rem;
+    font-size: 2.5rem;
+    display:inline-block;
+    position: relative;
+}
+
+.sectionTitle::after {
+    position: absolute;
+    height: 2px;
+    margin: 0 auto;
+    content: '';
+    left: 0;
+    right: 0;
+    width: 70%;
+    color: #000;
+    background-color: #77e085;
+    left: 0;
+    bottom: -3px;
+}
+
+.imageAndDesc {
+    margin-top: 8rem;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.profileImage {
+    min-height: 320px;
+    min-width: 320px;
+    background-color: #2b2b2b;
+}
+
+.imageAndDesc p {
+    width: 40%;
+    line-height: 1.5rem;
+    text-align: left;
 }
