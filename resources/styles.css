@@ -3,6 +3,7 @@
 html {
     box-sizing: border-box;
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
@@ -109,11 +110,23 @@ nav ul li a {
     color: #fff;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + #about {
+    padding-top: 100px;
+}
+
 /* About */
 
 #about {
+    padding-top: 50px;
+    margin-top: -50px;
     width: 100%;
-    height: 1000px;
+    height: 1500px;
     text-align: center;
 }
 
