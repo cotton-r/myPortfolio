@@ -164,4 +164,6 @@ nav ul li a {
     line-height: 1.5rem;
     text-align: left;
     font-size: 1.2rem;
+    border: 2px solid #77e085;
+    padding: 40px;
 }
