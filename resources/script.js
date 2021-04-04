@@ -19,6 +19,6 @@ function myFunction() {
 
 
 function scrollFunction() {
-    let element = document.getElementById('about');
+    let element = document.getElementById("about");
     element.scrollIntoView();
 }; 
