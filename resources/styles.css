@@ -30,6 +30,7 @@ body, input, textarea, button {
 body {
     background-color: #eeeeee;
     color: #363C60;
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -164,7 +165,7 @@ nav ul li a {
 
 .imageAndDesc {
     margin-top: 4rem;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -212,6 +213,13 @@ nav ul li a {
     margin-left: 2px;
 }
 
+@media only screen and (max-width: 1078px) {
+    .courseDetails {
+        padding: 10px;
+        margin-top: -30px;
+    }
+}
+
 @media only screen and (max-width: 928px) {
     .imageAndDesc {
         width: 100%;
@@ -229,6 +237,25 @@ nav ul li a {
     .profileImage img {
         height: 320px;
         width: 320px;
+    }
+    .courseAndSkills {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        background-color: #363C60;
+        margin-top: 75px;
+        padding: 10px 5px;
+    }
+    .courseDetails {
+        width: 100%;
+        justify-self: center;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+    .skillsContainer {
+        max-width: 100%;
     }
 }
 
