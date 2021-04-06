@@ -308,7 +308,6 @@ nav ul li a {
 #projects {
     width: 100%;
     text-align: center;
-    height: 700px;
 }
 
 .projectsContainer {
@@ -328,6 +327,9 @@ nav ul li a {
 .project {
     height: 300px;
     width: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @media only screen and (max-width: 915px) {
@@ -362,7 +364,7 @@ nav ul li a {
 }
 
 .projectOverlay {
-    background-color: hsl(231, 28%, 29%, .75);
+    background-color: hsl(231, 28%, 29%, .85);
     height: 100%;
     width: 100%;
     transition: 0.3s;
@@ -428,4 +430,30 @@ nav ul li a {
 .project:hover .projectOverlay {
     visibility: visible;
     opacity: 1;
+}
+
+.project:nth-of-type(1) {
+    background-image: url(/resources/images/wallhaven-2e3kw6.jpg);
+}
+.project:nth-of-type(2) {
+    background-image: url(/resources/images/wallhaven-pk8jzp.jpg);
+}
+.project:nth-of-type(3) {
+    background-image: url(/resources/images/wallhaven-rd7k1j.jpg);
+}
+.project:nth-of-type(4) {
+    background-image: url(/resources/images/wallpaperflare.com_wallpaper.jpg);
+}
+.project:nth-of-type(5) {
+    background-image: url(/resources/images/crystal-skies-4k-j6-3840x2160.jpg);
+}
+.project:nth-of-type(6) {
+    background-image: url(/resources/images/191548.jpg);
+}
+
+/* Contact */
+
+#contact {
+    text-align: center;
+    height: 700px;
 }
