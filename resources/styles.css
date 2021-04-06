@@ -326,7 +326,6 @@ nav ul li a {
 }
 
 .project {
-    background-color: #999999;
     height: 300px;
     width: 300px;
 }
@@ -357,8 +356,76 @@ nav ul li a {
     }
     
     .project {
-        background-color: #999999;
         width: 90vw;
         height: 90vw;
     }
+}
+
+.projectOverlay {
+    background-color: hsl(231, 28%, 29%, .75);
+    height: 100%;
+    width: 100%;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.projectName {
+    display: block;
+    color: #fff;
+    padding-top: 5%;
+    font-size: 1.7rem;
+}
+
+.techUsed {
+    display: block;
+    color: #20B0A7;
+    font-size: 1.1rem;
+    margin-top: 4%;
+}
+
+.viewSite {
+    display: block;
+    margin-top: 18%;
+}
+
+.viewSite a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.viewCode {
+    display: block;
+    margin-top: 15%;
+}
+
+.viewCode a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.projectButton {
+    padding: 10px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 1.05rem;
+}
+
+.projectButton:hover {
+    background-color: #20B0A7;
+    border-color: #20B0A7;
+    transition: 0.4s;
+}
+
+.button:focus {
+    outline: none;
+    padding: none;
+}
+
+.project:hover .projectOverlay {
+    visibility: visible;
+    opacity: 1;
 }
