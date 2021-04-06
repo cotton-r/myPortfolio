@@ -326,11 +326,11 @@ nav ul li a {
 
 .project {
     background-color: #999999;
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
 }
 
-@media only screen and (max-width: 654px) {
+@media only screen and (max-width: 915px) {
     .projectsContainer {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -339,7 +339,7 @@ nav ul li a {
     }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 623px) {
     .projectsContainer {
         margin-left: auto;
         margin-right: auto;
