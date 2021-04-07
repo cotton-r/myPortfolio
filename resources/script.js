@@ -53,6 +53,8 @@ function callbackFuncTwo(entries, observertwo) {
         if (entry.intersectionRatio > 0) {
             document.getElementById('aboutDesc').style.marginRight = "0px";
             document.getElementById('aboutDesc').style.opacity = "1";
+            document.getElementById('profilePic').style.marginLeft = "0px";
+            document.getElementById('profilePic').style.opacity = "1";
         }
     });
 };
@@ -65,4 +67,4 @@ let optionstwo = {
 
 let observertwo = new IntersectionObserver(callbackFuncTwo, optionstwo);
 
-observertwo.observe(document.getElementById('aboutDesc'));
+observertwo.observe(document.getElementById('profileImageAnchor'));
