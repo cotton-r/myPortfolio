@@ -342,6 +342,7 @@ nav ul li a {
     opacity: 0;
     grid-auto-flow: row;
     transition: ease-in-out 0.7s;
+    padding-bottom: 80px;
 }
 
 .project {
@@ -478,11 +479,17 @@ nav ul li a {
     background-image: url(/resources/images/191548.jpg);
 }
 
+#projects svg {
+    margin-bottom: -6px;
+}
+
 /* Contact */
 
 #contact {
     text-align: center;
     height: 1700px;
+    background-color: #363C60;
+    color: #eeeeee;
 }
 
 #contactAnchor {
