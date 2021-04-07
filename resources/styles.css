@@ -135,6 +135,7 @@ nav ul li a {
     margin-top: -50px;
     width: 100%;
     text-align: center;
+    overflow: hidden;
 }
 
 #aboutAnchor {
@@ -169,6 +170,12 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#aboutDesc {
+    margin-right: -600px;
+    opacity: 0;
+    transition: 0.8s;
 }
 
 .imageAndDesc p {
@@ -297,17 +304,22 @@ nav ul li a {
 
 /* each skill bar */
 
-.html {width: 80%; background-color: #08fdd8;}
-.css {width: 70%; background-color: #ff2253;}
-.javascript {width: 45%; background-color: #d26cd5;}
-.git {width: 25%; background-color: #66b871;}
-.python {width: 10%; background-color: #f3f161;}
+#html {width: 0%; background-color: #08fdd8; transition: 1.3s;}
+#css {width: 0%; background-color: #ff2253; transition: 1.3s; transition-delay: 0.3s;}
+#javascript {width: 0%; background-color: #d26cd5; transition: 1.3s; transition-delay: 0.6s;}
+#git {width: 0%; background-color: #66b871; transition: 1.3s; transition-delay: 0.9s;}
+#python {width: 0%; background-color: #f3f161; transition: 1.3s; transition-delay: 1.2s;}
 
 /* Projects */
 
 #projects {
     width: 100%;
     text-align: center;
+}
+
+#projectAnchor {
+    position: absolute;   
+    margin-top: -50px; 
 }
 
 .projectsContainer {
@@ -369,13 +381,15 @@ nav ul li a {
     width: 100%;
     transition: 0.3s;
     opacity: 0;
+    overflow: hidden;
 }
 
 .projectName {
     display: block;
     color: #fff;
-    padding-top: 5%;
+    margin-top: -50px;
     font-size: 1.7rem;
+    transition: 0.4s;
 }
 
 .techUsed {
@@ -432,6 +446,11 @@ nav ul li a {
     opacity: 1;
 }
 
+.project:hover .projectName {
+    padding-top: 5%;
+    margin-top: 0px;
+}
+
 .project:nth-of-type(1) {
     background-image: url(/resources/images/wallhaven-2e3kw6.jpg);
 }
@@ -455,5 +474,10 @@ nav ul li a {
 
 #contact {
     text-align: center;
-    height: 700px;
+    height: 1700px;
+}
+
+#contactAnchor {
+    position: absolute;   
+    margin-top: -50px; 
 }

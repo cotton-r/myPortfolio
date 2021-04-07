@@ -25,8 +25,8 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#aboutAnchor">About Me</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li> 
+                    <li><a href="#projectAnchor">Projects</a></li>
+                    <li><a href="#contactAnchor">Contact</a></li> 
                 </ul>
             </nav>
         </section>
@@ -38,7 +38,7 @@
                 <div class="profileImage">
                     <img src="/resources/images/circle-cropped.png" height="420px" width="420px">
                 </div>
-                <p>I graduated from Canterbury Christ Church University in 2019 with a degree in 
+                <p id="aboutDesc">I graduated from Canterbury Christ Church University in 2019 with a degree in 
                     Environmental Science. I now live in Bristol and currently work in the financial 
                     sector. Over the past year I have been completing a Full-Stack Web Development 
                     course, with a heavy focus on Front-End.
@@ -63,31 +63,33 @@
                         </ul>                        
                     <p>On top of this the course prioritises best practices, accessibility, data structures and algorithms.</p>
                 </section>
-                <section class="skillsContainer">
+                <section class="skillsContainer" id="skillsAnchor">
                     <p>HTML</p>
                     <div class="skillCell">
-                        <div class="skills html"></div>
+                        <div class="skills" id="html"></div>
                     </div>
                     <p>CSS</p>
                     <div class="skillCell">
-                        <div class="skills css"></div>
+                        <div class="skills" id="css"></div>
                     </div>
                     <p>JavaScript</p>
                     <div class="skillCell">
-                        <div class="skills javascript"></div>
+                        <div class="skills" id="javascript"></div>
                     </div>
                     <p>Git & GitHub</p>
                     <div class="skillCell">
-                        <div class="skills git"></div>
+                        <div class="skills" id="git"></div>
                     </div>
                     <p>Python</p>
                     <div class="skillCell">
-                        <div class="skills python"></div>
+                        <div class="skills" id="python"></div>
                     </div>
                 </section>
             </section>
         </section>
         <section id="projects">
+            <!-- Page anchor to allow navigation to projects section (accounting for fixed navbar) -->
+            <a id="projectAnchor"></a>
             <h2 class="sectionTitle">Projects</h2>
             <div class="projectsContainer">
                 <div class="project">
@@ -141,9 +143,11 @@
             </div>
         </section>
         <section id="contact">
+            <!-- Page anchor to allow navigation to contact section (accounting for fixed navbar) -->
+            <a id="contactAnchor"></a>
             <h2 class="sectionTitle">Contact me</h2>
         </section>
     </main>
-    <script src="/resources/script.js"></script>
+    <script src="/resources/script.js "></script>
 </body> 
 </html>
