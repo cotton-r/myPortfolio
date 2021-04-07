@@ -68,3 +68,24 @@ let optionstwo = {
 let observertwo = new IntersectionObserver(callbackFuncTwo, optionstwo);
 
 observertwo.observe(document.getElementById('profileImageAnchor'));
+
+// function to check when 'projects' section is scrolled to and animate elements when so //
+
+function callbackFuncThree(entries, observerthree) {
+    entries.forEach(entry => {
+        if (entry.intersectionRatio > 0) {
+            document.getElementById('projectsVisible').style.gridGap = "2px";
+            document.getElementById('projectsVisible').style.opacity = "1";
+        }
+    });
+};
+
+let optionsthree = {
+    root: null, // Sets the framing element to the viewport
+    rootMargin: "0px",
+    threshold: 0.1
+};
+
+let observerthree = new IntersectionObserver(callbackFuncThree, optionsthree);
+
+observerthree.observe(document.getElementById('projectsVisible'));

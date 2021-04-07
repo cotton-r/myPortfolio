@@ -165,7 +165,7 @@ nav ul li a {
 }
 
 #profilePic {
-    margin-left: -300px;
+    margin-left: -200px;
     opacity: 0;
     transition: 0.4s;
 }
@@ -179,7 +179,7 @@ nav ul li a {
 }
 
 #aboutDesc {
-    margin-right: -600px;
+    margin-right: -400px;
     opacity: 0;
     transition: 0.6s;
 }
@@ -338,8 +338,10 @@ nav ul li a {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     justify-items: stretch;
-    grid-gap: 2px;
+    grid-gap: 100px;
+    opacity: 0;
     grid-auto-flow: row;
+    transition: ease-in-out 0.7s;
 }
 
 .project {
