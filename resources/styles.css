@@ -118,6 +118,11 @@ nav ul li a {
     color: #fff;
 }
 
+nav ul li a:hover {
+    color: #20B0A7;
+    transition: 0.3s;
+}
+
 .sticky {
     position: fixed;
     top: 0;
@@ -484,9 +489,12 @@ nav ul li a {
 
 #contact {
     text-align: center;
-    height: 1700px;
     background-color: #363C60;
     color: #eeeeee;
+}
+
+#contact h2 {
+    margin-top: 40px;
 }
 
 #contactAnchor {
@@ -524,10 +532,11 @@ nav ul li a {
 }
 
 .linksContainer {
-    margin-top: 200px;
+    margin-top: 160px;
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+    padding-bottom: 220px;
 }
 
 .linkBox {
@@ -551,4 +560,44 @@ nav ul li a {
 .linkBox a:hover + a {
     color: #20B0A7;
     transition: 0.3s;
+}
+
+/* Footer */ 
+
+#footer {
+    background-color: #202342;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footerNav ul {
+    height: 120px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 20%;
+    width: max-content;
+}
+
+
+#footer nav ul li {
+    display: block;
+    padding: 0px 30px;
+}
+
+#footer nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#footer nav ul li a:hover {
+    color: #20B0A7;
+}
+
+#footer div {
+    margin-right: 20px;
 }
