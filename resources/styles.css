@@ -539,6 +539,23 @@ nav ul li a:hover {
     padding-bottom: 220px;
 }
 
+@media only screen and (max-width: 887px) {
+    .linksContainer {
+        margin-top: 90px;
+        flex-direction: column;
+        padding-bottom: 220px;
+        align-items: center;
+    }
+
+    .linkBox {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #121212;
+    }
+}
+
 .linkBox {
     display: flex;
     flex-direction: column;
@@ -600,4 +617,6 @@ nav ul li a:hover {
 
 #footer div {
     margin-right: 20px;
+    align-self: flex-end;
+    margin-bottom: 50px;
 }
