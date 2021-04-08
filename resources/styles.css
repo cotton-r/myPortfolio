@@ -494,27 +494,27 @@ nav ul li a {
     margin-top: -50px; 
 }
 
-#phoneIcon {
+#Smartphone {
     fill: white;
     width: 40px;
     height: auto;
 }
 
-#emailIcon {
+#Capa_1 {
     fill: white;
-    width: 40px;
+    width: 50px;
     height: auto;
 }
 
 #githubIcon {
     fill: white;
-    width: 40px;
+    width: 50px;
     height: auto;
 }
 
 #linkedinIcon {
     fill: white;
-    width: 40px;
+    width: 50px;
     height: auto;
 }
 
@@ -536,4 +536,19 @@ nav ul li a {
     height: 90px;
     justify-content: space-between;
     align-items: center;
+}
+
+.icon:hover path {
+    fill: #20B0A7;
+    transition: 0.3s;
+}
+
+.icon:hover + p {
+    color: #20B0A7;
+    transition: 0.3s;
+}
+
+.linkBox a:hover + a {
+    color: #20B0A7;
+    transition: 0.3s;
 }
