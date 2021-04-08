@@ -496,3 +496,47 @@ nav ul li a {
     position: absolute;   
     margin-top: -50px; 
 }
+
+#phoneIcon {
+    fill: white;
+    width: 40px;
+    height: auto;
+}
+
+#emailIcon {
+    fill: white;
+    width: 40px;
+    height: auto;
+}
+
+#githubIcon {
+    fill: white;
+    width: 40px;
+    height: auto;
+}
+
+#linkedinIcon {
+    fill: white;
+    width: 40px;
+    height: auto;
+}
+
+.linkBox a {
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+.linksContainer {
+    margin-top: 200px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.linkBox {
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+}
