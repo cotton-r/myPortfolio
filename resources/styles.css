@@ -133,6 +133,30 @@ nav ul li a:hover {
     padding-top: 100px;
 }
 
+@media only screen and (max-width: 489px) {
+    #navbar {
+        width: 100%;
+        height: 50px;
+        background-color: #202342;
+        color: #fff;
+        border-bottom: 3px solid #20B0A7;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 100;
+    }
+    
+    nav ul li {
+        padding: 0px 0px;
+    }
+
+    #nav ul {
+        width: 95vw;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 /* About */
 
 #about {
