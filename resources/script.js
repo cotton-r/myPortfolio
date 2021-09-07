@@ -27,9 +27,10 @@ function scrollFunction() {
 function callbackFuncOne(entries, observer) {
     entries.forEach(entry => {
         if (entry.intersectionRatio > 0) {
-            document.getElementById('html').style.width = '80%';
-            document.getElementById('css').style.width = '70%';
-            document.getElementById('javascript').style.width = '45%';
+            document.getElementById('html').style.width = '75%';
+            document.getElementById('css').style.width = '65%';
+            document.getElementById('javascript').style.width = '62%';
+            document.getElementById('react').style.width = '45%';
             document.getElementById('git').style.width = '25%';
             document.getElementById('python').style.width = '10%';
         }
@@ -89,3 +90,25 @@ let optionsthree = {
 let observerthree = new IntersectionObserver(callbackFuncThree, optionsthree);
 
 observerthree.observe(document.getElementById('projectsVisible'));
+
+// modals section //
+
+let openBtn = document.getElementById('open-btn');
+let modalBackground = document.getElementById('modal-background');
+let closeBtn = document.getElementById('close-btn');
+
+openBtn.addEventListener('click', function() {
+    modalBackground.style.display = 'block';
+});
+
+closeBtn.addEventListener('click', function() {
+    modalBackground.style.display = 'none';
+});
+
+window.addEventListener('click', function(event) {
+    // check if the event happened on the modal-background
+    if (event.target === modalBackground) {
+      // hides the modal
+      modalBackground.style.display = 'none';
+    }
+});

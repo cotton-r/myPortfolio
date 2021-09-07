@@ -78,6 +78,10 @@
                     <div class="skillCell">
                         <div class="skills" id="javascript"></div>
                     </div>
+                    <p>React</p>
+                    <div class="skillCell">
+                        <div class="skills" id="react"></div>
+                    </div>
                     <p>Git & GitHub</p>
                     <div class="skillCell">
                         <div class="skills" id="git"></div>
@@ -93,56 +97,48 @@
             <!-- Page anchor to allow navigation to projects section (accounting for fixed navbar) -->
             <a id="projectAnchor"></a>
             <h2 class="sectionTitle">Projects</h2>
-            <div class="projectsContainer" id="projectsVisible">
-                <div class="project">
-                    <div class="projectOverlay">
-                        <span class="projectName">To-do List</span>
-                        <span class="techUsed">HTML / CSS / JavaScript</span>
-                        <span class="projectButton viewSite"><a href="#">View site</a></span>
-                        <span class="projectButton viewCode"><a href="#">View code</a></span>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="projectOverlay">
-                        <span class="projectName">To-do List</span>
-                        <span class="techUsed">HTML / CSS / JavaScript</span>
-                        <span class="projectButton viewSite"><a href="#">View site</a></span>
-                        <span class="projectButton viewCode"><a href="#">View code</a></span>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="projectOverlay">
-                        <span class="projectName">To-do List</span>
-                        <span class="techUsed">HTML / CSS / JavaScript</span>
-                        <span class="projectButton viewSite"><a href="#">View site</a></span>
-                        <span class="projectButton viewCode"><a href="#">View code</a></span>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="projectOverlay">
-                        <span class="projectName">To-do List</span>
-                        <span class="techUsed">HTML / CSS / JavaScript</span>
-                        <span class="projectButton viewSite"><a href="#">View site</a></span>
-                        <span class="projectButton viewCode"><a href="#">View code</a></span>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="projectOverlay">
-                        <span class="projectName">To-do List</span>
-                        <span class="techUsed">HTML / CSS / JavaScript</span>
-                        <span class="projectButton viewSite"><a href="#">View site</a></span>
-                        <span class="projectButton viewCode"><a href="#">View code</a></span>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="projectOverlay">
-                        <span class="projectName">To-do List</span>
-                        <span class="techUsed">HTML / CSS / JavaScript</span>
-                        <span class="projectButton viewSite"><a href="#">View site</a></span>
-                        <span class="projectButton viewCode"><a href="#">View code</a></span>
+            <div class="modalContainer">
+                <div id="modal-background">
+                    <div id="modal">
+                        <div class="modalImageContainer" id="modalImage1">
+                        </div>
+                        <div class="modalDesc">
+                            <h3 class="modalTitle">Jammming</h3>
+                            <p class="modalTechs">React / CSS / Spotify API</p>
+                            <p class="modalPara">
+                                This project was completed as part of the Codecademy Full Stack 
+                                Engineer course. Being my first time using React, I faced some 
+                                challenges. However, persevering with this project until completion 
+                                really solidified the basics of React and got me excited to work 
+                                with the framework more in the future.
+                                <br><br>
+                                This was also my first time using an API, which appeared
+                                complex at first but reading through the Spotify API documentation
+                                proved to be extremely helpful.
+                            </p>
+                        </div>
+                        <div class="buttons">
+                            <a target="_blank" href="http://jammmin_byrory.surge.sh/" class="modal1 projectButton modalLink">
+                            View Project
+                            </a>
+                            <a target="_blank" href="https://github.com/cotton-r/spotifyAPI.git" class="modal2 projectButton modalLink">
+                            View Code
+                            </a>
+                            <span id="close-btn">&times;</span>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="projectsContainer" id="projectsVisible">
+                <div class="project">
+                    <div class="projectOverlay">
+                        <span class="projectName">Jammming</span>
+                        <span class="techUsed">React / CSS / Spotify API</span>
+                        <span class="projectButton viewSite"><button href="#" id="open-btn">Learn more</button></span>
+                    </div>
+                </div>
+            </div>
+
             <svg width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
                 <path d="M0 0 L50 90 L100 0 V100 H0" fill="#363C60" />
               </svg>
