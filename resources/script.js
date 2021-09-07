@@ -92,23 +92,44 @@ let observerthree = new IntersectionObserver(callbackFuncThree, optionsthree);
 observerthree.observe(document.getElementById('projectsVisible'));
 
 // modals section //
+// modal 1
+let openBtn1 = document.getElementById('open-btn1');
+let modalBackground1 = document.getElementById('modal-background1');
+let closeBtn1 = document.getElementById('close-btn1');
 
-let openBtn = document.getElementById('open-btn');
-let modalBackground = document.getElementById('modal-background');
-let closeBtn = document.getElementById('close-btn');
-
-openBtn.addEventListener('click', function() {
-    modalBackground.style.display = 'block';
+openBtn1.addEventListener('click', function() {
+    modalBackground1.style.display = 'block';
 });
 
-closeBtn.addEventListener('click', function() {
-    modalBackground.style.display = 'none';
+closeBtn1.addEventListener('click', function() {
+    modalBackground1.style.display = 'none';
 });
 
 window.addEventListener('click', function(event) {
     // check if the event happened on the modal-background
-    if (event.target === modalBackground) {
+    if (event.target === modalBackground1) {
       // hides the modal
-      modalBackground.style.display = 'none';
+      modalBackground1.style.display = 'none';
+    }
+});
+
+// modal 2
+let openBtn2 = document.getElementById('open-btn2');
+let modalBackground2 = document.getElementById('modal-background2');
+let closeBtn2 = document.getElementById('close-btn2');
+
+openBtn2.addEventListener('click', function() {
+    modalBackground2.style.display = 'block';
+});
+
+closeBtn2.addEventListener('click', function() {
+    modalBackground2.style.display = 'none';
+});
+
+window.addEventListener('click', function(event) {
+    // check if the event happened on the modal-background
+    if (event.target === modalBackground2) {
+      // hides the modal
+      modalBackground2.style.display = 'none';
     }
 });

@@ -447,6 +447,10 @@ nav ul li a:hover {
     overflow: hidden;
 }
 
+.projectsContainer div:nth-of-type(2) .projectOverlay {
+    background-color: hsl(231, 28%, 29%, .96);
+}
+
 .projectName {
     display: block;
     color: #fff;
@@ -514,7 +518,8 @@ nav ul li a:hover {
     background-image: url(/resources/images/background_photo_desktop.webp);
 }
 .project:nth-of-type(2) {
-    background-image: url(/resources/images/wallhaven-pk8jzp.jpg);
+    background-image: url(/resources/images/reddit-logo-image.png);
+    opacity: .95;
 }
 .project:nth-of-type(3) {
     background-image: url(/resources/images/wallhaven-rd7k1j.jpg);
@@ -678,7 +683,18 @@ nav ul li a:hover {
 
 /* Modals */
 
-#modal-background {
+#modal-background1 {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+}
+
+#modal-background2 {
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
     top: 0;
@@ -723,7 +739,7 @@ nav ul li a:hover {
     cursor: pointer;
 }
   
-#close-btn:hover {
+#close-btn1:hover, #close-btn2:hover {
     cursor: pointer;
     color: #20B0A7;
 }
@@ -734,7 +750,7 @@ nav ul li a:hover {
     align-items: center;
 }
 
-#close-btn {
+#close-btn1, #close-btn2 {
     font-size: 50px;
     position: absolute;
     right: 25px;
@@ -760,6 +776,13 @@ nav ul li a:hover {
 
 #modalImage1 {
     background-image: url(./images/jammmin-project.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#modalImage2 {
+    background-image: url(./images/reddit-minimal-project.PNG);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
