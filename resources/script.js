@@ -27,10 +27,12 @@ function scrollFunction() {
 function callbackFuncOne(entries, observer) {
     entries.forEach(entry => {
         if (entry.intersectionRatio > 0) {
-            document.getElementById('html').style.width = '75%';
-            document.getElementById('css').style.width = '65%';
-            document.getElementById('javascript').style.width = '62%';
-            document.getElementById('react').style.width = '45%';
+            document.getElementById('html').style.width = '80%';
+            document.getElementById('css').style.width = '70%';
+            document.getElementById('javascript').style.width = '69%';
+            document.getElementById('react').style.width = '60%';
+            document.getElementById('node').style.width = '37%';
+            document.getElementById('postgresql').style.width = '45%';
             document.getElementById('git').style.width = '25%';
             document.getElementById('python').style.width = '10%';
         }
@@ -131,5 +133,26 @@ window.addEventListener('click', function(event) {
     if (event.target === modalBackground2) {
       // hides the modal
       modalBackground2.style.display = 'none';
+    }
+});
+
+// modal 3
+let openBtn3 = document.getElementById('open-btn3');
+let modalBackground3 = document.getElementById('modal-background3');
+let closeBtn3 = document.getElementById('close-btn3');
+
+openBtn3.addEventListener('click', function() {
+    modalBackground3.style.display = 'block';
+});
+
+closeBtn3.addEventListener('click', function() {
+    modalBackground3.style.display = 'none';
+});
+
+window.addEventListener('click', function(event) {
+    // check if the event happened on the modal-background
+    if (event.target === modalBackground3) {
+      // hides the modal
+      modalBackground3.style.display = 'none';
     }
 });

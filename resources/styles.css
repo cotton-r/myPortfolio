@@ -249,7 +249,7 @@ nav ul li a:hover {
 }
 
 .courseAndSkills { 
-    height: 500px;
+    height: 620px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -366,8 +366,10 @@ nav ul li a:hover {
 #css {width: 0%; background-color: #ff2253; transition: 1s; transition-delay: 0.2s;}
 #javascript {width: 0%; background-color: #d26cd5; transition: 1s; transition-delay: 0.4s;}
 #react {width: 0%; background-color: #00d8ff; transition: 1s; transition-delay: 0.6s;}
-#git {width: 0%; background-color: #66b871; transition: 1s; transition-delay: 0.8s;}
-#python {width: 0%; background-color: #f3f161; transition: 1s; transition-delay: 1.0s;}
+#node {width: 0%; background-color: #f0e114; transition: 1s; transition-delay: 0.8s;}
+#postgresql {width: 0%; background-color: #f17b2c; transition: 1s; transition-delay: 1s;}
+#git {width: 0%; background-color: #66b871; transition: 1s; transition-delay: 1.2s;}
+#python {width: 0%; background-color: #f3f161; transition: 1s; transition-delay: 1.4s;}
 
 /* Projects */
 
@@ -379,6 +381,10 @@ nav ul li a:hover {
 #projectAnchor {
     position: absolute;   
     margin-top: -50px; 
+}
+
+#projects svg {
+    margin-bottom: -6px;
 }
 
 .projectsContainer {
@@ -396,6 +402,7 @@ nav ul li a:hover {
     grid-auto-flow: row;
     transition: ease-in-out 0.7s;
     padding-bottom: 80px;
+    height: 450px;
 }
 
 .project {
@@ -407,16 +414,17 @@ nav ul li a:hover {
     overflow: hidden;
 }
 
-@media only screen and (max-width: 915px) {
+@media only screen and (max-width: 943px) {
     .projectsContainer {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         justify-items: stretch;
         align-items: stretch;
+        height: 700px;
     }
 }
 
-@media only screen and (max-width: 623px) {
+@media only screen and (max-width: 639px) {
     .projectsContainer {
         margin-left: auto;
         margin-right: auto;
@@ -430,6 +438,7 @@ nav ul li a:hover {
         align-items: stretch;
         grid-gap: 2px;
         grid-auto-flow: row;
+        height: 1000px;
     }
     
     .project {
@@ -522,7 +531,8 @@ nav ul li a:hover {
     opacity: .95;
 }
 .project:nth-of-type(3) {
-    background-image: url(/resources/images/wallhaven-rd7k1j.jpg);
+    background-image: url(/resources/images/e-commerce-main.png);
+    border: 1px solid #919191;
 }
 .project:nth-of-type(4) {
     background-image: url(/resources/images/wallpaperflare.com_wallpaper.jpg);
@@ -532,10 +542,6 @@ nav ul li a:hover {
 }
 .project:nth-of-type(6) {
     background-image: url(/resources/images/191548.jpg);
-}
-
-#projects svg {
-    margin-bottom: -6px;
 }
 
 /* Contact */
@@ -705,6 +711,17 @@ nav ul li a:hover {
     display: none;
 }
 
+#modal-background3 {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+}
+
 #modal {
     background-color: #fff;
     position: absolute;
@@ -724,7 +741,7 @@ nav ul li a:hover {
     animation-duration: 0.4s;
 }
 
-.modal1, .modal2 {
+.modal1, .modal2, .modal3 {
     background-color: #20B0A7;
     color: #fff;
     width: auto;
@@ -739,7 +756,7 @@ nav ul li a:hover {
     cursor: pointer;
 }
   
-#close-btn1:hover, #close-btn2:hover {
+#close-btn1:hover, #close-btn2:hover, #close-btn3:hover {
     cursor: pointer;
     color: #20B0A7;
 }
@@ -750,7 +767,7 @@ nav ul li a:hover {
     align-items: center;
 }
 
-#close-btn1, #close-btn2 {
+#close-btn1, #close-btn2, #close-btn3 {
     font-size: 50px;
     position: absolute;
     right: 25px;
@@ -788,6 +805,13 @@ nav ul li a:hover {
     background-size: cover;
 }
 
+#modalImage3 {
+    background-image: url(./images/e-commerce-image.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .modalDesc {
     height: 270px;
 }
@@ -817,7 +841,7 @@ nav ul li a:hover {
         flex-direction: column;
         justify-content: space-between;
     }
-    .modal1, .modal2 {
+    .modal1, .modal2, .modal3 {
         margin-left: 0px;
         margin-right: 25px;
         justify-self: flex-start;
@@ -872,7 +896,7 @@ nav ul li a:hover {
         flex-direction: column;
         justify-content: space-between;
     }
-    .modal1, .modal2 {
+    .modal1, .modal2, .modal3 {
         margin-left: 0px;
         margin-right: 10px;
         justify-self: flex-start;
@@ -928,7 +952,7 @@ nav ul li a:hover {
         flex-direction: column;
         justify-content: space-between;
     }
-    .modal1, .modal2 {
+    .modal1, .modal2, .modal3 {
         margin-left: 0px;
         margin-right: 10px;
         justify-self: flex-start;
@@ -985,7 +1009,7 @@ nav ul li a:hover {
         flex-direction: column;
         justify-content: space-between;
     }
-    .modal1, .modal2 {
+    .modal1, .modal2, .modal3 {
         margin-left: 0px;
         margin-right: 5px;
         justify-self: flex-start;

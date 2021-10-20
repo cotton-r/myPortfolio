@@ -53,9 +53,10 @@
                 <section class="courseDetails">
                     <h2>Experience</h2>
                     <br><br>
-                    <p>In November 2020 I began a 1 year Traineeship in Web Development. The course covers the fundamentals of HTML, CSS and Javascript, before out-sourcing the learning 
-                        to the internationally recognised codecademy.com. <br><br>Here, my knowledge has been built upon and expanded and by the end of the course I will be familiar with 
-                        technologies such as: </p>
+                    <p>In November 2020 I began a 1 year Traineeship in Web Development. The course covers the 
+                        fundamentals of HTML, CSS and Javascript, before out-sourcing the learning to the 
+                        internationally recognised codecademy.com. <br><br>Here, my knowledge has been built 
+                        upon and expanded to include technologies such as: </p>
                         <ul>
                             <li>React</li>
                             <li>Node.js</li>
@@ -63,7 +64,10 @@
                             <li>SQL</li>
                             <li>PostgreSQL</li>
                         </ul>                        
-                    <p>On top of this the course prioritises best practices, accessibility, data structures and algorithms.</p>
+                    <p>Before the end of 2021 I plan to sit the Microsoft 98-383 exam to show employers that 
+                        I have a professional, industry-recognised level of knowledge in Front-End programming 
+                        languages.
+                    </p>
                 </section>
                 <section class="skillsContainer" id="skillsAnchor">
                     <p>HTML</p>
@@ -81,6 +85,14 @@
                     <p>React</p>
                     <div class="skillCell">
                         <div class="skills" id="react"></div>
+                    </div>
+                    <p>Node.js / Express.js</p>
+                    <div class="skillCell">
+                        <div class="skills" id="node"></div>
+                    </div>
+                    <p>PostgreSQL</p>
+                    <div class="skillCell">
+                        <div class="skills" id="postgresql"></div>
                     </div>
                     <p>Git & GitHub</p>
                     <div class="skillCell">
@@ -159,6 +171,36 @@
                         </div>
                     </div>
                 </div>
+                <!-- Modal 3 -->
+                <div id="modal-background3">
+                    <div id="modal">
+                        <div class="modalImageContainer" id="modalImage3">
+                        </div>
+                        <div class="modalDesc">
+                            <h3 class="modalTitle">The Football Shop</h3>
+                            <p class="modalTechs">Node.js / Express.js / React / PostgreSQL</p>
+                            <p class="modalPara">
+                                The most complex and challenging project I have completed to date. Using Node 
+                                & Express.js I built a server, along with a Postgres database, connected to
+                                the client facing React app, using Redux for state management.
+                                <br><br>
+                                Some of the biggest challenges I faced were allowing users to login, and 
+                                dynamically displaying their login status on the client. Also, letting users 
+                                store items in their cart, using sessionStorage. Connecting everything 
+                                together was complex, but taught me a lot about backend processes.
+                            </p>
+                        </div>
+                        <div class="buttons">
+                            <a target="_blank" href="https://thefootballshop.herokuapp.com/" class="modal3 projectButton modalLink">
+                            View Project
+                            </a>
+                            <a target="_blank" href="https://github.com/cotton-r/e-commerce-project" class="modal3 projectButton modalLink">
+                            View Code
+                            </a>
+                            <span id="close-btn3">&times;</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="projectsContainer" id="projectsVisible">
                 <div class="project">
@@ -173,6 +215,13 @@
                         <span class="projectName">Reddit Minimal</span>
                         <span class="techUsed">React / Redux / Reddit API</span>
                         <span class="projectButton viewSite"><button href="#" id="open-btn2">Learn more</button></span>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="projectOverlay">
+                        <span class="projectName">The Football Shop</span>
+                        <span class="techUsed">Node.js / Express.js / React / PostgreSQL</span>
+                        <span class="projectButton viewSite"><button href="#" id="open-btn3">Learn more</button></span>
                     </div>
                 </div>
             </div>
@@ -209,7 +258,6 @@
                     <li><a href="#contactAnchor">Contact</a></li> 
                 </ul>
             </nav>
-            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </section>
     </main>
     <script src="/resources/script.js "></script>
